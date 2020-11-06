@@ -12,7 +12,7 @@ do
   modem.broadcast(PORT, "wake_drone")
   os.sleep(10)
   print("Loading new BIOS...")
-  local fullCmd = string.format("%s %s", CMD, loadNewBios("drone.lua"))
+  local fullCmd = string.format("%s %s", CMD, loadNewBios("drone_bios.lua"))
   print("Broadcasting update...")
   modem.broadcast(PORT, fullCmd)
   print("Done")
