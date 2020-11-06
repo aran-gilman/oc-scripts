@@ -1,3 +1,4 @@
+local component = require("component")
 local modem = component.modem
 
 local PORT = 42

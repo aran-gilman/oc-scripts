@@ -16,7 +16,7 @@ local function recharge(range)
     if w.label == "ChargeStation" then
       local pos = w.position
       drone.move(pos[1], pos[2], pos[3])
-      while computer.energy() < 5000 do os.sleep(5) end
+      while computer.energy() < 5000 do end
       return
     end
   end
